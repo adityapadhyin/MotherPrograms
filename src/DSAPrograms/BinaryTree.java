@@ -18,11 +18,12 @@ public class BinaryTree {
                 insert(node.left, value);
             }
             else {
-                System.out.println(" Inserted " + value + " to left of " + node.value);
+                System.out.println(" Inserted " + value + " to left of  " + node.value);
                 node.left = new Node(value);
             }
         } else if (value > node.value) {
             if (node.right != null) {
+
                 insert(node.right, value);
             } else {
                 System.out.println("  Inserted " + value + " to right of "
@@ -68,6 +69,7 @@ public class BinaryTree {
         tree.insert(root, 9);
         System.out.println("Traversing tree in order");
         tree.traverseInOrder(root);
+        //searching an element
         boolean d= tree.searchElement(root,7);
         System.out.println(d);
 
