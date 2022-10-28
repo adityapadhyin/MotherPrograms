@@ -67,7 +67,7 @@ public class BinaryTree {
         tree.insert(root, 7);
         tree.insert(root, 3);
         tree.insert(root, 9);
-        System.out.println("Traversing tree in order");
+        System.out.println(" Traversing tree in order");
         tree.traverseInOrder(root);
         //searching an element
         boolean d= tree.searchElement(root,7);
